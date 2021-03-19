@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ]
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": true, // No compilation. Type-check only
+    "pretty": true, // Logs are formatted
+    "strict": false, // Get out the way
+    "esModuleInterop": true, // import without `* as x`
+    "jsx": "preserve", // Mandatory; Next implements its own optimized jsx transform
+    "sourceMap": true,
+    "module": "esnext", // To support dynamic `import()`
+    "moduleResolution": "node", // To match webpack resolution
+    "resolveJsonModule": true, // To match webpack resolution
+    "isolatedModules": true, // Required for Babel
+    // STYLE
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
+}
